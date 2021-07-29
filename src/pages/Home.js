@@ -140,11 +140,12 @@ h1{
   
 }
 li{
+  
   text-align:center;
   letter-spacing:2px;
   font-weight:700;
   line-height:1.6;
-  max-width:600px;
+  max-width:800px;
   color:	#DCDCDC;
   font-size:15px;
   @media(max-width:500px){
@@ -216,7 +217,7 @@ function Home() {
       </Div>
          <About>
             <h1>About Us</h1>
-            <li>sdajjfhakshfkajshfkahsfVirtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment (e.g. video games), education (e.g. medical or military training) and business (e.g. virtual meetings). Other distinct types of VR-style technology include augmented reality and mixed reality, sometimes referred to as extended reality or XR.[1]
+            <li>Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment (e.g. video games), education (e.g. medical or military training) and business (e.g. virtual meetings). Other distinct types of VR-style technology include augmented reality and mixed reality, sometimes referred to as extended reality or XR.[1]
 
               One may distinguish between two types of VR; immersive VR and text-based networked VR (also known as "Cyberspace").[2] The immersive VR changes your view, when you move your head. While both VRs are appropriate for training, Cyberspace is preferred for distance learning.[2] In some cases these two types are even complementary to each other. This page mainly focuses on the immersive VR.</li>
           

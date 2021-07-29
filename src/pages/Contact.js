@@ -46,11 +46,14 @@ const VR = styled(motion.div)`
 `
 const Contactus = styled.div`
     display:flex;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
-    transform:translateY(-400px); 
+    transform:translateY(-440px); 
     color:white;
     letter-spacing:10px;
+    
+    
     h1{
         
           
@@ -65,27 +68,36 @@ const Contactus = styled.div`
 const Icons = styled(motion.div)`
     display:flex;
     flex-direction:column;
-    
+   
+
     img{
         
         height:20px;
         width:20px;
         margin-top:20px;
-
+        
         @media (max-width:500px){
             margin-top:20px;
         }
         &:hover{
             height:25px;
             width:25px;
-            transition: all 0.25s;
+            transition: all ease-in-out 0.3s;
         }
         @media (max-width:500px){
             transform:translateY(300px);
             
         }
+        p{
+            letter-spacing:4px;
+            font-family:helvetica;
+            position:absolute;
+            transform:translate(70px,90px);
+        }
     }
 `
+
+
 const VRvariants = {
     hidden:{
         opacity:0
@@ -101,17 +113,20 @@ const VRvariants = {
 const VRcontact = {
     hidden:{
         opacity: 0,
-        scale:2
+        x:-400
     },
     visible: {
         opacity: 1,
-        scale:1,
+        x:0,
         transition: {
-            duration: 3,
-            delay:0
+            duration: 5,
+            delay: 2,
+            type:"spring"
         }
     }
 }
+
+
 const Contact = () => {
     const [text, setText] = useState(false)
     setTimeout(() => {
@@ -139,9 +154,16 @@ const Contact = () => {
                     {text &&
                         <h1>CONTACT US</h1>}
                     
-                   {text&& <img src="./instagram.png" alt="insta-icon"/>}
-                    {text&& <img src="./whatsapp.png" alt="whatsapp-icon" />}
-                    {text&& <img src="./gmail.png" alt="gmail-icon" />}
+                    {text && <img src="./instagram.png" alt="insta-icon"/>}
+                   
+                    {text && <img src="./whatsapp.png" alt="whatsapp-icon" />}
+                    
+                    {text && <img src="./gmail.png" alt="gmail-icon" />}
+                   
+                        <p style={{letterSpacing:"4px",fontFamily:"helvetica",position:"absolute",transform:"translate(70px,90px)"}}>instagram.com</p>
+                        <p style={{letterSpacing:"4px",fontFamily:"helvetica",position:"absolute",transform:"translate(70px,130px)"}}>939393939393</p>
+                        <p style={{letterSpacing:"4px",fontFamily:"helvetica",position:"absolute",transform:"translate(70px,168px)"}}> xrhorizon@gmail.com</p>
+                    
                     
                 </Icons>
                 
