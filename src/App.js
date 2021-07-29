@@ -1,7 +1,7 @@
 import React,{lazy, Suspense} from 'react'
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import { Route,Switch } from 'react-router-dom';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import {  AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 import Hamburger from './pages/hamburger'
 import Loading from './pages/Loading';

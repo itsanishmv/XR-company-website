@@ -152,13 +152,7 @@ li{
   }
 }
 `
-const Sbutton = styled.div`
-display:flex;
 
-border:1px  solid red;
-
-z-index:1;
-`
 const homeVariants = {
 from:{
   opacity:0.5,

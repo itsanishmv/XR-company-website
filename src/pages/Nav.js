@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {motion, MotionConfig} from 'framer-motion'
-import {BrowserRouter as Router,Link,NavLink, Redirect} from 'react-router-dom'
-import { css, keyframes } from 'styled-components'
+import {motion} from 'framer-motion'
+import {NavLink} from 'react-router-dom'
+import {  keyframes } from 'styled-components'
 import './Nav.css'
 export const Bounce = keyframes`
     0% {

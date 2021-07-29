@@ -170,7 +170,7 @@ const OurWorks = () => {
                 
             </Content>
                 <Gif>
-                     <img  src="https://media.giphy.com/media/TyQY0zTXX4x0c/source.gif"></img>
+                     <img  src="https://media.giphy.com/media/TyQY0zTXX4x0c/source.gif" alt="alt"></img>
                 </Gif>
             </div>
       
