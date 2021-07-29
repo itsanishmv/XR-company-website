@@ -63,6 +63,7 @@ const ScrollButton = () =>{
   
   return (
             <Div>
+      {visible}
                <img src="./arrow-up.svg" alt="up" onClick={scrollToTop} />
             </Div>
   );
