@@ -204,7 +204,7 @@ function Home() {
         <H1 
          
         >{logo &&
-          <img src="./logo-white.png" alt="logo xr" />
+          <img src="./mainlogo.svg" alt="logo xr" />
          }
         </H1>
         <Arrow>

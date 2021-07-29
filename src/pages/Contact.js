@@ -120,7 +120,7 @@ const Contact = () => {
     return (
         <Div>
             <div>
-                <Link to="/"><img src="./logo-white.png" alt="logo" /></Link>
+                <Link to="/"><img src="./mainlogo.svg" alt="logo" /></Link>
             </div>
            
                 <VR variants={VRvariants}

@@ -147,7 +147,7 @@ const OurWorks = () => {
             animate="visible"
         >
             <div>
-                <Link to="/"><img src="./logo-white.png" alt="top bar logo" /></Link> 
+                <Link to="/"><img src="./mainlogo.svg" alt="top bar logo" /></Link> 
             
                 <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/Jd2GK0qDtRg?controls=0&amp;start=4&amp;loop=1&amp;autoplay=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <Arrow>
