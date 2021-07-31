@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import styled,{keyframes} from 'styled-components'
+import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Aos from 'aos'
@@ -52,21 +52,8 @@ const VR = styled(motion.div)`
     }
   
 `
-const arrow = keyframes`
-    0%{
-    opacity:0;
-        
-    }
-    50%{
-    opacity:0.5s;
-    
-    
-    }
-    100%{
-    opacity:1;
-    
-    }
-`
+
+
 
 const Icons = styled(motion.div)`
         
