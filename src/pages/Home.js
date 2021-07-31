@@ -59,6 +59,9 @@ const logodelay = keyframes`
   opacity:0;
  
 }
+50%{
+  opacity:0.5;
+}
 
 100%{
   opacity:100%;
@@ -86,11 +89,15 @@ img{
   width:400px;
   animation:${(logo)=>logo? logodelay:""};
   animation-duration:3s;
-  animation-delay:0s;
-  @media (max-width:500px){
   
-    height:100px;
+  
+  @media (max-width:500px){
+    position:fixed;
+    object-fit:contain;
+    height:300px;
     width:300px;
+    animation:${logodelay} 2s;
+    animation-duration:3s;
   }
 }
 
