@@ -10,6 +10,9 @@ const Button = styled(motion.button)`
    background: none;
    font-weight:900;
    letter-spacing: 5px;
+   overflow:hidden;
+   
+   box-sizing:border-box;       
    &:hover{
 
        animation: ${Bounce} 2s;
@@ -18,17 +21,20 @@ const Button = styled(motion.button)`
 `
 const Div = styled(motion.div)`
         display:flex;
+            
         justify-content:center;
         flex-direction: column;
         align-items: center;
         background-color:black;
         position:fixed;
-        overflow:hidden;
         height:100vh;
-        width:100%;
+        overflow:hidden;
+        
         z-index:2;
-
+        width:100%;
+        box-sizing:border-box;
         div2{
+            position:relative;
             margin-bottom:20px;
             margin-top:20px;
 

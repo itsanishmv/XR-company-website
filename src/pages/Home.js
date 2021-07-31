@@ -4,11 +4,13 @@
 import styled, { keyframes } from 'styled-components'
 import { motion } from 'framer-motion'
 import ScrollButton from './ScrollButton'
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const fade = keyframes`
 0%{
   opacity:0px;
-  
 }
 50%{
   opacity:0.5;
@@ -34,8 +36,8 @@ const arrow = keyframes`
 `
 
 const Div = styled(motion.div)`
-position:relative;
-background-color: black;
+
+
 display:flex;
 justify-content: center;
 height:100vh;
@@ -44,10 +46,12 @@ background-image:url("earth-back.jpg");
 background-size: cover ;
 background-repeat:no-repeat ;
 background-position: center ;
+overflow:hidden;
 
 @media (max-width:500px){
-  background-size: contain;
+ 
   background-position: center center;
+  
 }
 `
 const logodelay = keyframes`
@@ -153,6 +157,40 @@ li{
   }
 }
 `
+const drag = keyframes`
+  0%{
+    transform:translateX(1510px);
+    opacity:0.5;
+  }
+  25%{
+    transform:translateX(50px);
+  
+  }
+  
+  75%{
+    transform:translateX(-100px);
+    
+  }
+  100%{
+    transform:translateX(-2000px);
+    
+  }
+`
+const P = styled.p`
+  animation:${drag}  ;
+  animation-duration:10s;
+  animation-delay:10s;
+
+  transform:translateX(1600px);
+  position:fixed;
+  overflowX:hidden;
+  @media (max-width:500px){
+    width:500px;
+    transform:translateX(-2000px);
+    position:fixed;
+    
+  }
+`
 
 const homeVariants = {
 from:{
@@ -193,6 +231,9 @@ function Home() {
       setLogo(true)
     },3000)
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  },[])
   return (
     
     <div style={{backgroundColor:"black"}}>
@@ -217,14 +258,14 @@ function Home() {
       </Div>
          <About>
             <h1>About Us</h1>
-            <li>Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment (e.g. video games), education (e.g. medical or military training) and business (e.g. virtual meetings). Other distinct types of VR-style technology include augmented reality and mixed reality, sometimes referred to as extended reality or XR.[1]
+            <li data-aos="fade-up">Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment (e.g. video games), education (e.g. medical or military training) and business (e.g. virtual meetings). Other distinct types of VR-style technology include augmented reality and mixed reality, sometimes referred to as extended reality or XR.[1]
 
-              One may distinguish between two types of VR; immersive VR and text-based networked VR (also known as "Cyberspace").[2] The immersive VR changes your view, when you move your head. While both VRs are appropriate for training, Cyberspace is preferred for distance learning.[2] In some cases these two types are even complementary to each other. This page mainly focuses on the immersive VR.</li>
+            One may distinguish between two types of VR; immersive VR and text-based networked VR (also known as "Cyberspace").[2] The immersive VR changes your view, when you move your head. While both VRs are appropriate for training, Cyberspace is preferred for distance learning.[2] In some cases these two types are even complementary to each other. This page mainly focuses on the immersive VR.</li>
           
          </About>
          
             <ScrollButton/>
-         <p style={{letterSpacing:"2px",fontWeight:"700",paddingBottom:"100px",color:'#DCDCDC',display:'flex',justifyContent:'center'}}>OUR WEBISTE IS UNDER DEVELOPMENT  PLEASE VISIT US AFTER SOMETIME , WE HAVE A LOT OF EXCITING STUFF TO SHARE WITH YOU  </p>
+      <P style={{ letterSpacing: "2px", fontWeight: "700", paddingBottom: "100px", color: '#DCDCDC', display: 'flex', justifyContent: 'center', marginTop: "-1200px"}}>OUR WEBISTE IS UNDER DEVELOPMENT  PLEASE VISIT US AFTER SOMETIME , WE HAVE A LOT OF EXCITING STUFF TO SHARE WITH YOU  </P>
           
     </div>
   );

@@ -7,11 +7,11 @@ import { motion } from 'framer-motion'
 import Mobilemenu from './Mobilemenu'
 
 const Div = styled(motion.div)`
-    position:absolute;
+    position:fixed;
     height:30px;
     width:40px;
     top:20px;
-    right:20px;
+    right:25px;
     display:flex;
     flex-flow:column nowrap;
     justify-content:space-around;
