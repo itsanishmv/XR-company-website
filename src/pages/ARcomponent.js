@@ -1,6 +1,6 @@
 
 import { ZapparCanvas, ZapparCamera ,InstantTracker} from '@zappar/zappar-react-three-fiber'
-import { useState } from 'react';
+
 
 
 const ARcomponent = () => {
