@@ -70,11 +70,16 @@ const Mobilemenu = ({open,setOpen}) => {
                   <Button >OUR WORKS</Button>
               </Link>
           </div2>
-          <div3>
-            <Link style={{textDecoration:"none"}} to="/contact">
-                <Button >CONTACT</Button>
-          </Link>
-          </div3>
+            <div3>
+                <Link style={{textDecoration:"none"}} to="/contact">
+                    <Button >CONTACT</Button>
+                </Link>
+            </div3>
+            <div style={{paddingTop:"20px"}}>
+                <Link style={{textDecoration:"none" }} to ="/AR">
+                    <Button>AR</Button>
+                </Link>
+            </div>
         </Div>
     )
 }

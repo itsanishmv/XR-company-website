@@ -18,7 +18,7 @@ const Header = styled.div`
     const OurWorks = lazy(() => import("./pages/ourWorks"))
     const Home = lazy(() => import("./pages/Home"))
     const Contact = lazy(() => import("./pages/Contact"))
-
+    const AR = lazy(()=>import('./pages/ARcomponent'))
 
 const App = () => {
     const Location = useLocation()
@@ -33,7 +33,8 @@ const App = () => {
                     <Switch location={Location} key={Location.key}>
                             <Route exact path="/" component={Home} />
                             <Route path="/Ourworks" component={OurWorks}/>
-                            <Route path="/Contact" component={ Contact}/>
+                            <Route path="/Contact" component={Contact} />
+                            <Route path ="/Ar" component={AR}/>  
                     </Switch>
                 </AnimatePresence>
             </Suspense>

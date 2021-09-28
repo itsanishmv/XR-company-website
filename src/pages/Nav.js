@@ -71,8 +71,11 @@ const Nav = ({ open, setOpen }) => {
             <NavLink exact className="button" activeStyle={{color:'white'}}  to="/contact">
                 CONTACT
           </NavLink>
-          </div3>
-        
+      </div3>
+         <NavLink exact className="button" activeStyle={{color:'white'}}  to="/AR">
+                AR
+          </NavLink>
+          
         </Div>
       
     

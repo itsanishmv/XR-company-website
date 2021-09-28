@@ -190,7 +190,7 @@ const P = styled.p`
 
   transform:translateX(1600px);
   position:fixed;
-  overflowX:hidden;
+ 
   @media (max-width:500px){
     width:500px;
     transform:translateX(-2000px);
@@ -218,19 +218,7 @@ exit: {
   
 }
 }
-/*const H1variants = {
-hidden: {
-  opacity:0
-},
-visible: {
-  opacity: 1,
-  transition: {
-   
-    
-  }
-}
 
-}*/
 
 function Home() {
   const [logo, setLogo] = useState(false)
