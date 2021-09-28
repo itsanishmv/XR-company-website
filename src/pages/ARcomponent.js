@@ -15,7 +15,7 @@ const ARcomponent = () => {
             placementCameraOffset={[0, 0, -10]}
           >
             <mesh>
-              <img src="" alt="" />
+             <sphereBufferGeometry/>
               <meshStandardMaterial color="red" />
             </mesh>
           </InstantTracker>
